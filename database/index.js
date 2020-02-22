@@ -45,4 +45,6 @@ const productSchema = new mongoose.Schema({
   related: [{ type: String }]
 });
 
+module.exports = mongoose.connection;
+
 module.exports.Product = mongoose.model("Product", productSchema);

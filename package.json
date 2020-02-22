@@ -18,12 +18,14 @@
   "homepage": "https://github.com/Salto-Angel/Products#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "etl": "^0.6.12",
     "express": "^4.17.1",
     "mongodb": "^3.5.3",
     "mongoose": "^5.9.1",
     "morgan": "^1.9.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.2",
-    "postgres": "^1.0.2"
+    "postgres": "^1.0.2",
+    "util": "^0.12.1"
   }
 }
