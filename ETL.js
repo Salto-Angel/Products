@@ -4,11 +4,13 @@ const util = require("util");
 
 function productWrite() {
   let collection = db.then(function(db) {
-    return db.collection("products");
+    // return db.collection("products");
+    return db.collection("productsTest");
   });
 
   etl
-    .file("../product.csv")
+    // .file("../product.csv")
+    .file("../test.csv")
     .pipe(etl.csv())
     .pipe(
       etl.map(function(line) {
@@ -30,11 +32,13 @@ function productWrite() {
 
 function featuresWrite() {
   let collection = db.then(function(db) {
-    return db.collection("features");
+    // return db.collection("features");
+    return db.collection("featuresTest");
   });
 
   etl
-    .file("../features.csv")
+    // .file("../features.csv")
+    .file("../test2.csv")
     .pipe(etl.csv())
     .pipe(
       etl.map(function(line) {
@@ -54,11 +58,13 @@ function featuresWrite() {
 
 function stylesWrite() {
   let collection = db.then(function(db) {
-    return db.collection("styles");
+    // return db.collection("styles");
+    return db.collection("stylesTest");
   });
 
   etl
-    .file("../styles.csv")
+    // .file("../styles.csv")
+    .file("../test3.csv")
     .pipe(etl.csv())
     .pipe(
       etl.map(function(line) {
@@ -81,11 +87,13 @@ function stylesWrite() {
 
 function skusWrite() {
   let collection = db.then(function(db) {
-    return db.collection("skus");
+    // return db.collection("skus");
+    return db.collection("skusTest");
   });
 
   etl
-    .file("../skus.csv")
+    // .file("../skus.csv")
+    .file("../test4.csv")
     .pipe(etl.csv())
     .pipe(
       etl.map(function(line) {
@@ -105,11 +113,13 @@ function skusWrite() {
 
 function photosWrite() {
   let collection = db.then(function(db) {
-    return db.collection("photos");
+    // return db.collection("photos");
+    return db.collection("photosTest");
   });
 
   etl
-    .file("../photos.csv")
+    // .file("../photos.csv")
+    .file("../test5.csv")
     .pipe(etl.csv())
     .pipe(
       etl.map(function(line) {
@@ -128,11 +138,13 @@ function photosWrite() {
 
 function relatedWrite() {
   let collection = db.then(function(db) {
-    return db.collection("related");
+    // return db.collection("related");
+    return db.collection("relatedTest");
   });
 
   etl
-    .file("../related.csv")
+    // .file("../related.csv")
+    .file("../test6.csv")
     .pipe(etl.csv())
     .pipe(
       etl.map(function(line) {
