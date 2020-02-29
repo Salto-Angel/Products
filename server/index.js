@@ -24,6 +24,5 @@ if (cluster.isMaster) {
 }
 
 cluster.on("exit", worker => {
-  console.log("worker ", worker.id, " is no more");
   cluster.fork();
 });
